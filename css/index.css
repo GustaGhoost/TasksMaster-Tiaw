@@ -1,0 +1,87 @@
+/*Importando fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Estilos para o corpo da página */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffefd55d;
+}
+
+/* Estilos para o contêiner do formulário */
+.form-container {
+    width: 50%;
+    margin: 20px 0;
+    margin-top: 100px;
+}
+
+/* Estilos para o formulário dentro do contêiner */
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para campos de entrada e botões dentro do formulário */
+.form-container form input,
+.form-container form button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Estilos para botões dentro do formulário */
+.form-container form button {
+    cursor: pointer;
+}
+
+/* Estilos para links de alternância */
+.toggle-link {
+    margin: 10px 0;
+    cursor: pointer;
+    color: #333;
+    text-decoration: none;
+}
+
+.toggle-link:hover {
+    font-size: 1.1rem;
+    color: #ffaf4d;
+}
+
+input{
+    border: transparent;
+    background-color: #b7b7b727;
+    border-radius: 0.5rem ;
+}
+
+button {
+    cursor: pointer;
+    border: transparent;
+    background-color: #ffaf4d;
+    border-radius: 0.5rem;
+}
+
+
+button:hover{
+    background-color: #ffaf4d99;
+}
+
+a{
+    margin: 10px 0;
+    cursor: pointer;
+    color: #333;
+    text-decoration: none;  
+}
+
+a:hover{
+    color: #ffaf4d99;
+}
+
+
+h4{
+   margin-right: 20px;
+   margin-block: 10px;
+}

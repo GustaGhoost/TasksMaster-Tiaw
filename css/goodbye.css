@@ -1,0 +1,74 @@
+/*Importando fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    /* Estiliza o corpo da página */
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    /* padding: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background-color: #ffefd55d;
+    overflow: hidden; /* Adicione overflow: hidden para esconder barras de rolagem */
+}
+
+.content {
+    /* Estiliza o contêiner principal */
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #b7b7b727;
+    padding: 40px;
+    border-radius: 0.5rem;
+    margin-top: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content p {
+    margin-bottom: 2rem;
+    font-size: 20px;
+}
+
+.content img {
+    /* Estiliza as imagens dentro do contêiner */
+    max-width: 400px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.message {
+    /* Estiliza o texto dentro do contêiner */
+    text-align: left;
+}
+
+.login-button {
+    /* Estiliza o botão de login */
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #333;
+    border-radius: 0.5rem;
+}
+
+.login-button:hover {
+    /* Estiliza o botão de login quando hover */
+    background-color: #0000005b;
+}
+
+/* Ajuste para telas menores */
+@media only screen and (max-width: 600px) {
+    .content {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+}

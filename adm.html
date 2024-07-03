@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Configuração da codificação e escala inicial para dispositivos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+    <!-- Estilo CSS para administração -->
+    <link rel="stylesheet" href="/css/adm.css">
+    <link rel="icon" href="/assets/Logo.png" type="image/x-icon"> <!-- Adicionando Logo do Projeto -->
+</head>
+<body>
+
+    <!-- Barra de navegação -->
+    <div class="navbar">
+        <h1>TasksMaster</h1>
+        <!-- Botão para logout -->
+        <button onclick="logout()">Tarefas</button>
+    </div>
+
+    <!-- Container do formulário de cadastro de cliente -->
+    <div class="form-container">
+        <h2>Cadastro de Cliente</h2>
+        <!-- Formulário para adicionar cliente, chamando a função addClient() no submit -->
+        <form id="clientForm" onsubmit="return addClient()">
+            <input type="text" id="clientName" placeholder="Nome" required>
+            <input type="email" id="clientEmail" placeholder="Email" required>
+            <input type="text" id="clientPhone" placeholder="Telefone" required>
+            <input type="password" id="clientPassword" placeholder="Senha" required>
+            <button type="submit">Adicionar</button>
+        </form>
+    </div>
+
+    <!-- Container da lista de clientes -->
+    <div class="client-list-container">
+        <h2>Lista de Clientes</h2>
+        <!-- Barra de pesquisa por nome de cliente -->
+        <input type="text" class="search-bar" id="searchBar" placeholder="Pesquisar por nome" oninput="searchClient()">
+        <!-- Tabela para exibir os clientes -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="clientTableBody">
+                <!-- Corpo da tabela onde os clientes serão inseridos dinamicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Script JavaScript para administração -->
+    <script src="/js/adm.js"></script>
+</body>
+</html>

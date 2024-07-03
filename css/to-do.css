@@ -1,0 +1,146 @@
+/*Importando fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Estilos do corpo do documento */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffefd55d;
+}
+
+/* Estilos da barra de navegação (navbar) */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffaf4d;
+    color: #333;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Estilos do título na barra de navegação */
+.navbar h1 {
+    margin: 0;
+    margin-left: 1rem;
+}
+
+/* Estilos para os botões na barra de navegação */
+.navbar button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+}
+
+/* Estilos de hover para os botões na barra de navegação */
+.navbar button:hover {
+    background-color: #7f7263;
+}
+
+/* Estilos para os containers de formulário e lista de projetos */
+.form-container,
+.project-list-container {
+    width: 80%;
+    margin: 80px 0 20px 0;
+}
+
+/* Estilos para formulários dentro do container */
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para inputs, textareas e botões dentro de formulários */
+.form-container form input,
+.form-container form textarea,
+.form-container form button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Estilos para o container da lista de projetos */
+.project-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para a barra de pesquisa e seleção de ordenação */
+.search-bar,
+.sort-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para o cartão de projeto */
+.card {
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #b7b7b727;
+}
+
+/* Estilos para o cartão de projeto quando está concluído */
+.card.completed {
+    background-color: #ffaf4d3d;
+}
+
+/* Estilos para o título no cartão de projeto */
+.card h3 {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+
+/* Estilos para parágrafos no cartão de projeto */
+.card p {
+    margin: 0 0 10px 0;
+}
+
+/* Estilos para botões de ação no cartão de projeto */
+.card .actions button {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Estilos genéricos para botões */
+button {
+    cursor: pointer;
+    border: transparent;
+    background-color: #ffaf4d;
+    border-radius: 0.5rem;
+}
+
+input {
+    border: transparent;
+    background-color: #b7b7b727;
+    border-radius: 0.5rem;
+}
+
+select {
+    border: transparent;
+    background-color: #b7b7b727;
+    border-radius: 0.5rem;
+}
+
+textarea {
+    background-color: #b7b7b727;
+    border: transparent;
+    border-radius: 0.5rem;
+}

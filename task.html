@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas dos Administradores</title>
+    <link rel="stylesheet" href="/css/task.css">
+    <link rel="icon" href="/assets/Logo.png" type="image/x-icon"> <!-- Adicionando Logo do Projeto -->
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <div class="navbar">
+        <h1>TasksMaster</h1>
+        <button onclick="logout()">Saída</button>
+    </div>
+
+    <!-- Contêiner do formulário para adicionar projeto -->
+    <div class="form-container">
+        <h2>Adicionar Projeto</h2>
+        <form id="projectForm" onsubmit="return addProject()">
+            <!-- Campo para o nome do projeto -->
+            <input type="text" id="projectName" placeholder="Nome do Projeto" required>
+            <!-- Campo para a data de conclusão do projeto -->
+            <input type="date" id="completionDate" required>
+            <!-- Campo para o conteúdo do projeto -->
+            <textarea id="projectContent" placeholder="Conteúdo do Projeto" rows="4" required></textarea>
+            <!-- Botão para adicionar o projeto -->
+            <button type="submit">Adicionar</button>
+        </form>
+    </div>
+
+    <!-- Contêiner da lista de projetos -->
+    <div class="project-list-container">
+        <h2>Lista de Projetos</h2>
+        <!-- Barra de pesquisa por nome de projeto -->
+        <input type="text" class="search-bar" id="searchBar" placeholder="Pesquisar por nome" oninput="searchProject()">
+        <!-- Seleção de ordenação dos projetos -->
+        <select class="sort-select" id="sortSelect" onchange="sortProjects()">
+            <option value="all">Todos</option>
+            <option value="completed">Concluídos</option>
+            <option value="pending">Pendentes</option>
+        </select>
+        <!-- Div para listar os projetos -->
+        <div id="projectList">
+            <!-- Projetos serão inseridos aqui dinamicamente -->
+        </div>
+    </div>
+
+    <!-- Script JavaScript para funcionalidades de gerenciamento de projetos -->
+    <script src="/js/taks.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Tarefas</title>
+    <link rel="stylesheet" href="/css/to-do.css"> <!-- Importa o arquivo de estilos CSS -->
+    <link rel="icon" href="/assets/Logo.png" type="image/x-icon"> <!-- Adicionando Logo do Projeto -->
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <div class="navbar">
+        <h1>TasksMaster</h1> <!-- Título principal da página -->
+        <button onclick="logout()">Saída</button> <!-- Botão de logout -->
+    </div>
+
+    <!-- Container do formulário de adicionar projeto -->
+    <div class="form-container">
+        <h2>Adicionar Projeto</h2> <!-- Título do formulário -->
+        <form id="projectForm" onsubmit="return addProject()">
+            <input type="text" id="projectName" placeholder="Nome do Projeto" required> <!-- Campo de entrada para o nome do projeto -->
+            <input type="date" id="completionDate" required> <!-- Campo de entrada para a data de conclusão -->
+            <textarea id="projectContent" placeholder="Conteúdo do Projeto" rows="4" required></textarea> <!-- Área de texto para o conteúdo do projeto -->
+            <button type="submit">Adicionar</button> <!-- Botão para adicionar o projeto -->
+        </form>
+    </div>
+
+    <!-- Container da lista de projetos -->
+    <div class="project-list-container">
+        <h2>Lista de Projetos</h2> <!-- Título da lista de projetos -->
+        <input type="text" class="search-bar" id="searchBar" placeholder="Pesquisar por nome" oninput="searchProject()"> <!-- Campo de busca por nome de projeto -->
+        <select class="sort-select" id="sortSelect" onchange="sortProjects()">
+            <option value="all">Todos</option> <!-- Opção para exibir todos os projetos -->
+            <option value="completed">Concluídos</option> <!-- Opção para exibir apenas projetos concluídos -->
+            <option value="pending">Pendentes</option> <!-- Opção para exibir apenas projetos pendentes -->
+        </select>
+        <div id="projectList">
+            <!-- Projetos serão inseridos dinamicamente aqui -->
+        </div>
+    </div>
+
+    <!-- Scripts JavaScript -->
+    <script src="/js/to-do.js"></script> <!-- Importa o arquivo JavaScript -->
+</body>
+</html>

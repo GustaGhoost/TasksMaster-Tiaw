@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Registro</title>
+    <link rel="stylesheet" href="/css/index.css"> <!-- Importa o arquivo CSS para estilização -->
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="icon" href="/assets/Logo.png" type="image/x-icon"> <!-- Adicionando Logo do Projeto -->
+</head>
+<body>
+
+     <!-- Barra de navegação -->
+     <div class="navbar">
+        <h1>TasksMaster</h1>
+        <!-- Botão para logout -->
+        <h4>Bem - vindo</h>
+    </div>
+
+    <div class="form-container">
+        <h2 id="formTitle">Registro</h2> <!-- Título do formulário -->
+        <form id="userForm" onsubmit="return handleSubmit()"> <!-- Formulário de registro com função de submissão -->
+            <input type="text" id="name" placeholder="Nome" required> <!-- Campo de entrada para o nome -->
+            <input type="email" id="email" placeholder="Email" required> <!-- Campo de entrada para o email -->
+            <input type="text" id="phone" placeholder="Telefone" required> <!-- Campo de entrada para o telefone -->
+            <input type="password" id="password" placeholder="Senha" required> <!-- Campo de entrada para a senha -->
+            <button type="submit">Registrar</button> <!-- Botão de envio do formulário de registro -->
+        </form>
+        <div class="toggle-link" onclick="toggleForm()">Já tem uma conta? Faça login</div> <!-- Link para alternar entre registro e login -->
+        <div class="toggle-link" onclick="adminAccess()">Acesso para Administradores</div> <!-- Link para acesso de administradores -->
+        <div class="toggle-link"><a href="to-do.html">Continuar sem Login</a></div>
+    </div>
+
+    <script src="/js/index.js"></script> <!-- Importa o arquivo JavaScript para funcionalidades -->
+</body>
+</html>

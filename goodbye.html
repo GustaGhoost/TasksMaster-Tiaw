@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8"> <!-- Definindo o charset para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configuração da viewport para responsividade -->
+    <title>Até mais...</title> <!-- Título da página -->
+    <link rel="stylesheet" href="/css/goodbye.css"> <!-- Inclusão do arquivo CSS para estilização -->
+    <link rel="stylesheet" href="/css/nav.css"> <!-- Inclusão do arquivo CSS para estilização -->
+    <link rel="icon" href="/assets/Logo.png" type="image/x-icon"> <!-- Adicionando Logo do Projeto -->
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h1>TasksMaster</h1>
+        <button onclick="logout()">Saída</button>
+    </div>
+
+    <div class="content">
+        <img src="/assets/goodbye.svg" alt="Imagem de Despedida"> <!-- Imagem de despedida com alternativa de texto -->
+        <div class="message">
+            <p>Obrigado por usar o TasksMaster!</p> <!-- Mensagem de agradecimento -->
+            <p>Esperamos que o software tenha sido útil para você. Continue aprimorando sua produtividade e organização
+                com o TasksMaster...</p> <!-- Mensagem de encorajamento -->
+            <a href="index.html" class="login-button">Login</a>
+            <!-- Botão de redirecionamento para a página de login -->
+        </div>
+    </div>
+
+    <script>
+        // Função para realizar logout
+        function logout() {
+            // Exibe um prompt de confirmação antes de redirecionar para a página de despedida
+            if (confirm("Você será redirecionado para a página de Login")) {
+                window.location.href = "index.html";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
